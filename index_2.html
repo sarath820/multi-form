@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multi-step-form</title>
+    <link href="src/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body class="sm:bg-blue-200">
+   <div class="grid justify-items-center">
+       <div>
+        <img src="images/bg-sidebar-mobile.svg" class="w-full sm:hidden">
+        <div class="grid w-full grid-cols-4 gap-7 relative bottom-30 left-3 sm:grid-cols-1">
+        <div class="w-8 h-8 border-2 rounded-full  border-white text-white text-center">1</div>
+        <div class="w-8 h-8 border-2 rounded-full  border-white text-white text-center">2</div>
+        <div class="w-8 h-8 border-2 rounded-full  border-white text-white text-center">3</div>
+        <div class="w-8 h-8 border-2 rounded-full  border-white text-white text-center">4</div>
+        </div>
+        
+       </div>
+       
+     
+       <div class="bg-blue-100 w-full sm:hidden"></div>
+    <div class="bg-white rounded-xl grid grid-cols-1 absolute top-20 w-80 p-4 h-3/4 sm:grid-cols-12 grid-rows-12 sm:w-1/2">
+        <img src="images/bg-sidebar-desktop.svg" class="hidden sm:block sm:col-span-3">
+        <div class="grid grid-cols-1 sm:col-span-9 h-96 sm:grid-rows-3 sm:grid-cols-3">
+        <h2 class="font-ubuntu sm:row-span-1 sm:col-span-3">Select your plan</h2>
+        <p class="text-gray-500 sm:row-span-1 sm: col-span-3">you have monthly or yearly plan</p>
+        <div class="border border-black rounded-2xl flex gap-3 items-center">
+            <img src="images/icon-arcade.svg" class="w-10 h-10 ml-2">
+            <div>
+              <p>Aracde</p>
+            <p>$9/mo</p>
+            <p>2 months free</p>
+            <p>$90/Yr</p>
+            </div>
+            
+        </div>
+        <div>
+            <img src="images/icon-advanced.svg" class="float-left mr-3">
+            <p>Advanced</p>
+            <p>$12/mo</p>
+            <p>$120/Yr</p>
+            <p>2 months free</p>
+        </div>
+        <div>
+            <img src="images/icon-pro.svg" alt="" class="float-left mr-3">
+            <p>Pro</p>
+            <p>$15/mo</p>
+            <p>$150/Yr</p>
+            <p>2 months free</p>
+        </div>
+        
+     </div>
+    </div>
+
+    
+</div> 
+   <p class="text-gray-500 absolute bottom-3 left-3">Go back</p>
+   <button class="text-black border-1 border-black absolute bottom-3 right-3 bg-blue-950 text-white p-1 rounded-md">Next step</button>
+</body>
+</html>
