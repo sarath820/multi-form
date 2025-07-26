@@ -8,54 +8,63 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 <body class="sm:bg-blue-200">
-   <div class="grid justify-items-center">
-       <div class="sm:hidden">
-        <img src="images/bg-sidebar-mobile.svg" class="w-full">
-        <div class="grid w-full grid-cols-4 gap-7 relative bottom-30 left-3 sm:grid-cols-1">
-        <div class="w-8 h-8 border-2 rounded-full  border-white text-white text-center">1</div>
-        <div class="w-8 h-8 border-2 rounded-full  border-white text-white text-center">2</div>
-        <div class="w-8 h-8 border-2 rounded-full  border-white text-white text-center">3</div>
-        <div class="w-8 h-8 border-2 rounded-full  border-white text-white text-center">4</div>
-        </div>
-        
-       </div>
-     
-       <div class="bg-blue-100 w-full sm:hidden"></div>
-    <div class="bg-white rounded-xl grid grid-cols-1 absolute top-20 w-80 p-4 h-3/4 sm:grid-cols-12 grid-rows-12 sm:w-1/2">
-        <img src="images/bg-sidebar-desktop.svg" class="hidden sm:block sm:col-span-4">
-        <div class="grid grid-cols-2 absolute gap-5 w-44 left-6 top-9">
-            
-        <div class="w-8 h-8 border-2 rounded-full  border-white text-white text-center">1</div>
-        <div>Step1 
-            your info
-        </div>
-        <div class="w-8 h-8 border-2 rounded-full  border-white text-white text-center">2</div>
-        <div>
-            Step2
-            Select plan
+    <div class="grid justify-items-center">
+        <div class="sm:hidden relative w-full">
+            <img src="images/bg-sidebar-mobile.svg" class="w-full sm:hidden">
+            <div class="grid w-full grid-cols-4 gap-7 absolute top-5 left-7 ">
+                <div class="w-8 h-8 border-2 rounded-full border-white text-white text-center">1</div>
+                <div class="w-8 h-8 border-2 rounded-full border-white text-white text-center">2</div>
+                <div class="w-8 h-8 border-2 rounded-full border-white text-white text-center">3</div>
+                <div class="w-8 h-8 border-2 rounded-full border-white text-white text-center bg-blue-200">4</div>
+            </div>
         </div>
 
-        <div class="w-8 h-8 border-2 rounded-full  border-white text-white text-center">3</div>
-        <div>
-            Step3
-            Add-on
+        <div class="bg-blue-100 w-full sm:hidden"></div>
+
+        <div class="bg-white rounded-xl grid grid-cols-1 absolute top-20 w-80 p-4 h-3/4 sm:grid-cols-12 grid-rows-12 sm:w-1/2">
+            <img src="images/bg-sidebar-desktop.svg" class="hidden sm:block sm:col-span-4">
+
+            <div class="hidden sm:visible sm:grid sm:grid-cols-2 sm:absolute sm:gap-5 sm:w-44 sm:left-6 sm:top-9">
+                <div class="w-8 h-8 border-2 rounded-full border-white text-white text-center">1</div>
+                <div>
+                    Step1 <br>
+                    your info
+                </div>
+                <div class="w-8 h-8 border-2 rounded-full border-white text-white text-center">2</div>
+                <div>
+                    Step2 <br>
+                    Select plan
+                </div>
+                <div class="w-8 h-8 border-2 rounded-full border-white text-white text-center">3</div>
+                <div>
+                    Step3 <br>
+                    Add-on
+                </div>
+                <div class="w-8 h-8 border-2 rounded-full border-white text-white text-center bg-blue-200">4</div>
+                <div>
+                    Step4 <br>
+                    Summary
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 gap-3 sm:col-span-8 h-96 sm:w-80 sm:ml-10 content-center justify-items-center">
+                <img src="images/icon-thank-you.svg" alt="">
+                <h2 class="text-blue-950 font-bold text-3xl">Thank you</h2>
+                <p>Thanks for confirming your subscription! We hope you have fun using our platform. if you ever need any help feel free to email to us at suppor@loremgaming.com</p>
+            </div>
         </div>
-        <div class="w-8 h-8 border-2 rounded-full  border-white text-white text-center">4</div>
-        <div>
-            Step4
-            Summary
-        </div>
-        </div>
-        <div class="grid grid-cols-1 justify-center h-96 col-span-8">
-         <img src="images/icon-thank-you.svg">
-         <p>Thank you for confirming your subscription.we hope you will have fun using our platform</p>
-        
-         </div>
     </div>
 
-    
-</div> 
-   <p class="text-gray-500 absolute bottom-3 left-3">Go back</p>
-   <button class="text-black border-1 border-black absolute bottom-3 right-3 bg-blue-950 text-white p-1 rounded-md">Next step</button>
+    <!-- <a href="index_3.html">
+        <p class="text-gray-500 absolute bottom-3 left-3">Go back</p>
+    </a>
+
+    <a href="index_5.html">
+        <button class="text-black border-1 border-black absolute bottom-3 right-3 bg-blue-950 text-white p-1 rounded-md">
+            Next step
+        </button>
+    </a> -->
+
+    <script src="src/script.js"></script>
 </body>
 </html>

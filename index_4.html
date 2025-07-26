@@ -8,46 +8,79 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 <body class="sm:bg-blue-200">
-   <div class="grid justify-items-center">
-       <div>
-        <img src="images/bg-sidebar-mobile.svg" class="w-full sm:hidden">
-        <div class="grid w-full grid-cols-4 gap-7 relative bottom-30 left-3 sm:grid-cols-1">
-        <div class="w-8 h-8 border-2 rounded-full  border-white text-white text-center">1</div>
-        <div class="w-8 h-8 border-2 rounded-full  border-white text-white text-center">2</div>
-        <div class="w-8 h-8 border-2 rounded-full  border-white text-white text-center">3</div>
-        <div class="w-8 h-8 border-2 rounded-full  border-white text-white text-center">4</div>
-        </div>
-        
-       </div>
-     
-       <div class="bg-blue-100 w-full sm:hidden"></div>
-    <div class="bg-white rounded-xl grid grid-cols-1 absolute top-20 w-80 p-4 h-3/4 sm:grid-cols-12 grid-rows-12 sm:w-1/2">
-        <img src="images/bg-sidebar-desktop.svg" class="hidden sm:block sm:col-span-4">
-        <div class="grid grid-cols-1 gap-3 sm:col-span-8 h-96 sm:w-80 sm:ml-10">
-         <h2 class="font-ubuntu">Finishing up</h2>
-         <p class="text-gray-500">Double check everything is Okay before finishing-up</p>
-          <div class="grid grid-cols-2 bg-blue-50">
-            <div>Arcade monthly
-                (change)
-                
+    <div class="grid justify-items-center">
+        <div class="sm:hidden relative w-full">
+            <img src="images/bg-sidebar-mobile.svg" class="w-full sm:hidden">
+            <div class="grid w-full grid-cols-4 gap-7 absolute top-5 left-7 ">
+                <div class="w-8 h-8 border-2 rounded-full border-white text-white text-center">1</div>
+                <div class="w-8 h-8 border-2 rounded-full border-white text-white text-center">2</div>
+                <div class="w-8 h-8 border-2 rounded-full border-white text-white text-center">3</div>
+                <div class="w-8 h-8 border-2 rounded-full border-white text-white text-center bg-blue-200">4</div>
             </div>
-            
-            <div class="justify-self-end">$+1/Mo</div>
-            <div>Online Service</div>
-            <div class="justify-self-end">$9/Mo</div>
-            <div>Large service</div>
-            <div class="justify-self-end">$+2/Mo</div>
-            <div class="bg-white">Total Per Month</div>
-            <div class="justify-self-end bg-white">+$12/Mo</div>
+        </div>
 
-          </div>
-        
-     </div>
+        <div class="bg-blue-100 w-full sm:hidden"></div>
+
+        <div class="bg-white rounded-xl grid grid-cols-1 absolute top-20 w-96 p-4 h-3/4 sm:grid-cols-12 grid-rows-12 sm:w-1/2">
+            <img src="images/bg-sidebar-desktop.svg" class="hidden sm:block sm:col-span-4">
+
+            <div class="hidden sm:visible sm:grid sm:grid-cols-2 sm:absolute sm:gap-5 sm:w-44 sm:left-6 sm:top-9">
+                <div class="w-8 h-8 border-2 rounded-full border-white text-white text-center">1</div>
+                <div>
+                    Step1 <br>
+                    your info
+                </div>
+                <div class="w-8 h-8 border-2 rounded-full border-white text-white text-center">2</div>
+                <div>
+                    Step2 <br>
+                    Select plan
+                </div>
+                <div class="w-8 h-8 border-2 rounded-full border-white text-white text-center">3</div>
+                <div>
+                    Step3 <br>
+                    Add-on
+                </div>
+                <div class="w-8 h-8 border-2 rounded-full border-white text-white text-center bg-blue-200">4</div>
+                <div>
+                    Step4 <br>
+                    Summary
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 gap-3 sm:col-span-8 h-96 sm:w-80 sm:ml-10">
+                <h2 class="font-ubuntu text-blue-950 text-3xl font-bold">Finishing up</h2>
+                <p class="text-gray-500">Double check everything is Okay before finishing-up</p>
+
+                <div class="grid grid-cols-2 bg-blue-50">
+                    <div id="planselected">
+                        Arcade monthly <br>
+                        (change)
+                    </div>
+                    <div class="justify-self-end" id="planprice">$+1/Mo</div>
+
+                    <div id="firstaddon">Online Service</div>
+                    <div class="justify-self-end" id="firstaddonprice">$+0/Mo</div>
+
+                    <div id="secondaddon">Large service</div>
+                    <div class="justify-self-end" id="secondaddonprice">$+0/Mo</div>
+
+                    <div class="bg-white">Total Per Month</div>
+                    <div class="justify-self-end bg-white" id="totalprice">+$12/Mo</div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    
-</div> 
-   <p class="text-gray-500 absolute bottom-3 left-3">Go back</p>
-   <button class="text-black border-1 border-black absolute bottom-3 right-3 bg-blue-950 text-white p-1 rounded-md">Next step</button>
+    <a href="index_3.html">
+        <p class="text-gray-500 absolute bottom-3 left-3">Go back</p>
+    </a>
+
+    <a href="index_5.html">
+        <button class="text-black border-1 border-black absolute bottom-3 right-3 bg-blue-950 text-white p-1 rounded-md">
+            Next step
+        </button>
+    </a>
+
+    <script src="src/script.js"></script>
 </body>
 </html>
